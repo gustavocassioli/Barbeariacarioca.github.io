@@ -1238,11 +1238,36 @@ td{
   padding: 100px;
   color: Black;
   font-size: 3vw;
-  background-image: linear-gradient(yellow, orange)
+  background-image: linear-gradient(#3a3a3a #1c1c1c)
 }
 
 tr{
   font-family: 'Roboto';
   font-style: italic;
   font-weight: bold;
+}
+
+/* Custom scrollbar styles */
+::-webkit-scrollbar {
+  width: 12px;
+}
+
+::-webkit-scrollbar-track {
+  background: #f4f4f4;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: linear-gradient(45deg, #d7a700, #af5b00);
+  border-radius: 10px;
+  border: 2px solid #f4f4f4;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: linear-gradient(45deg, #af5b00, #8b4600);
+}
+
+::-webkit-scrollbar-thumb:active {
+  background: linear-gradient(45deg, #8b4600, #6b3600);
 }
